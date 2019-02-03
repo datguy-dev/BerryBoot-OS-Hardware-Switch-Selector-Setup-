@@ -5,10 +5,10 @@
 5. Adjust at least the FTP values of boot_selector_config.py
 6. Transfer the Python files to Raspbian Lite. (Boot_selector.py etc.)
 7. Append the following to the end of /home/pi/.bashrc:
-...
+```
 sudo python /home/pi/ftp_server.py && sleep 2s &
 sudo python /home/pi/boot_selector.py
-...
+```
 8. Do not connect the switch for the first run in order to generate the required filename information. 
 9. Adjust boot_selector_config.py with the right filenames and GPIO for the switch and reboot. 
 
