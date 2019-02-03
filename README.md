@@ -6,6 +6,7 @@
 6. Transfer the Python files to Raspbian Lite. (Boot_selector.py etc.)
 7. Append the following to the end of /home/pi/.bashrc:
 ```
+#Adjust the dirs accordingly.
 sudo python /home/pi/ftp_server.py && sleep 2s &
 sudo python /home/pi/boot_selector.py
 ```
