@@ -13,6 +13,5 @@ sudo python /home/pi/boot_selector.py
 8. Make sure the switch is not connected for the first run in order to generate the required filenames. Use the command: `source ~/.bashrc`. You should now have a working FTP server and a text file in the same directory named `images.log`.
 9. Adjust boot_selector_config.py with the right filenames from `images.log` and the GPIO you wish to use for the switch. 
 
-The image designation works in the config file by assigning a GPIO number (BCM scheme) to an OS image filename. Your switch will connect to those GPIO. You don't know the image filenames yet so your first run won't be successful. However, the images.log file will provide you with those names to make proper adjustments. You may also use the terminal output if needed.
 
-When everything is set up. Upon rebooting, the ftp server starts. The images.log file is produced. If the switch IS connected, the system will countdown and reboot to the image that you have designated in the config file for the corresponding GPIO. If the switch is NOT connected, the system will not reboot allowing you to connect via FTP to adjust the config file as needed.
+When everything is set up. Upon rebooting, the ftp server starts. The images.log file is produced. If the switch IS connected, the system will begin a countdown timer and reboot to the image that you have designated in the config file for the corresponding GPIO. If the switch is NOT connected, the system will not reboot, allowing you to connect via FTP to adjust the config file as needed.
