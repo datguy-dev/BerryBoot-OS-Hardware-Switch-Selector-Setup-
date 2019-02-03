@@ -17,7 +17,7 @@ except sh.ErrorReturnCode_1:
 	print('\031[1;31;40m Run as root!')
 	quit(1)
 except Exception as e:
-	print('\031[1;31;40m {0}\n{1} -> {1}'.format(e, type(e).__name__, e.args))
+	print('\031[1;31;40m {0}\n{1} -> {2}'.format(e, type(e).__name__, e.args))
 	quit(2)
 
 if not os.path.isfile('./images.log'):
@@ -60,7 +60,7 @@ for gpio_pin, image in boot_selector_config.gpio_image.items():
 			gpio.cleanup()
 			sh.reboot()
 		except Exception as e:
-			print('\033[1;31;40m {0}\n{1} -> {1}'.format(e, type(e).__name__, e.args))
+			print('\033[1;31;40m {0}\n{1} -> {2}'.format(e, type(e).__name__, e.args))
 			quit(2)
 gpio.cleanup()
 runonce_file.close()
