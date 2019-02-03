@@ -6,7 +6,7 @@
 
 # How-To:
 1. Install BerryBoot and add your desired images.
-2. Install Raspbian Lite. (~300 mb)
+2. Install Raspbian Lite (~300 mb) and set it as the default OS to boot.
 3. Use `raspi-config` to setup networking if needed and auto-login of the user pi.
 4. Install pip, sh, and pyftpdlib, for python
 5. Adjust at least the FTP values of `boot_selector_config.py`.
