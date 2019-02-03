@@ -1,3 +1,10 @@
+<hr>
+<p align="center">
+  <img src="https://github.com/datguy-dev/BerryBoot-OS-Hardware-Switch-Selector-Setup-/blob/master/img.jpg" title="Main Window"><br>
+</p>
+<hr>
+
+# How-To:
 1. Install BerryBoot and add your desired images.
 2. Install Raspbian Lite. (~300 mb)
 3. Use `raspi-config` to setup networking if needed and auto-login of the user pi.
