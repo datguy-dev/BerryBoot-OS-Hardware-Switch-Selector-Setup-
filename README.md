@@ -10,4 +10,4 @@ sudo python /home/pi/ftp_server.py && sleep 2s &
 sudo python /home/pi/boot_selector.py
 ...
 
-Upon rebooting, the ftp server starts. If the switch IS connected, it will reboot to the image that you have designated in the config file for that GPIO. If the switch is NOT connected, the system will not reboot allowing you to connect and adjust the config file as needed. 
+Upon rebooting, the ftp server starts. If the switch IS connected, it will reboot to the image that you have designated in the config file for that GPIO. If the switch is NOT connected, the system will not reboot allowing you to connect and adjust the config file as needed. Additionally, when boot_selector.py is ran, even if it fails normally it'll generate an images.log file which can be used to adjust the filename's for the config file. 
